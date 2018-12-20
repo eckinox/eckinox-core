@@ -1,0 +1,38 @@
+{
+    "{Eckinox.locale}": {
+        "param": "lg",
+        "lang": "en_CA",
+        "currency": "CAD",
+        "timezone": "America/Toronto",
+        
+        "langs": {
+            "fr_CA" : "locale.french",
+            "en_US" : "locale.english"
+        },
+        
+        "shortcuts": {
+            "fr" : "fr_CA",
+            "en" : "en_CA"
+        },
+        
+        "currencies": {
+            "CAD" : {
+                "country_list": "CA",
+                "locale": "fr_CA;en_CA",
+                "lang": "locale.currencies:CAD"
+            },
+            
+            "USD" : {
+                "country_list": "US",
+                "locale": "en_US",
+                "lang": "locale.currencies:USD"
+            },
+            
+            "EUR" : {
+                "country_list": "DE;BE;CY;ES;EE;FI;FR;GR;IE;IT;LV;LU;MT;NL;PT;SK;SI",
+                "locale": "fr_FR;de_DE",
+                "lang": "locale.currencies:EUR"
+            }
+        }
+    }
+}

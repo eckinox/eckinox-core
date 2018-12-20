@@ -1,0 +1,38 @@
+{
+    "Eckinox" : {
+        "benchmark" : {
+            "enabled" : true,
+            "log" : true
+        },
+
+        "encoding" : {
+            "default" : "UTF-8"
+        },
+
+        "system": {
+            "url": {
+                "rewrite": true,
+                "rewrite_public": false,
+                "base": "/",
+                "root": []
+            },
+            "output_compression": true,
+            "cache_control": "max-age=3600, must-revalidate"
+        },
+
+        "language" : {
+            "vars" : {
+                "pattern" : "~\\{\\$(.*?)\\}~si"
+            }
+        },
+
+        "annotation" : {
+            "ignore" : [
+                "param", "return", "var", "since", "author", "version", "copyright", "category", "package", "subpackage",
+                "api", "internal", "link", "see", "deprecated", "example", "filesource", "global", "ignore", "internal",
+                "license", "method", "property", "property-read", "property-write", "throws", "todo", "source", "inheritdoc"
+            ],
+            "autoload" : []
+        }
+    }
+}
