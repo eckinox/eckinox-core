@@ -1,0 +1,25 @@
+{
+    "{Nex.router}" : {
+        "routes" : {
+            "nex" : {
+                "autoload" : true,
+                "{method.any}" : {
+                    "/" : {
+                        "obj" : "\\%NAMESPACE%\\%PROJECTNAME%=>launch",
+                        "priority" : 50
+                    },
+
+                    "/migrate" : {
+                        "obj" : "\\%NAMESPACE%\\%PROJECTNAME%=>migrate",
+                        "priority" : 100
+                    },
+
+                    "/!/cron" : {
+                        "obj" : "\\%NAMESPACE%\\%PROJECTNAME%=>cron",
+                        "priority" : 10
+                    }
+                }
+            }
+        }
+    }
+}
