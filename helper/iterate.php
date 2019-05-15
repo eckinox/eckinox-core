@@ -93,7 +93,7 @@ abstract class iterate {
         $retval = [];
 
         if ( file_exists($path) ) {
-            $iterator = new RecursiveIteratorIterator(new RecursiveDirectoryIterator($path), RecursiveIteratorIterator::SELF_FIRST,  RecursiveIteratorIterator::CATCH_GET_CHILD);
+            $iterator = new RecursiveIteratorIterator(new RecursiveDirectoryIterator($path, RecursiveDirectoryIterator::SKIP_DOTS), RecursiveIteratorIterator::SELF_FIRST,  RecursiveIteratorIterator::CATCH_GET_CHILD);
 
             if ($file_extension) {
                 $iterator = new RegexIterator($iterator, '/^.+\.'.$file_extension.'$/i', RecursiveRegexIterator::GET_MATCH);
@@ -104,7 +104,9 @@ abstract class iterate {
                     $retval[] = $file[0];
                 }
                 else {
-                    $retval[] = $file->getRealPath();
+                    if ( $file->isFile() || $file->isDir() ) {
+                        $retval[] = $file->getRealPath();
+                    }
                 }
             }
         }

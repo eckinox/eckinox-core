@@ -22,6 +22,7 @@ define('DOC_ROOT', dirname(realpath(__FILE__)).DIRECTORY_SEPARATOR);    // will 
 define('SCRIPT_ROOT', getcwd().DIRECTORY_SEPARATOR); // Same as DOC_ROOT but path is defined depending of where the include/require came from. Will be the same as DOC_ROOT when index.php is called directly
 define('NEX',  basename(__FILE__));               // will output something like : index.php
 
+
 // change to the real docroot if external script allows it or if front controller is a symlink
 if( is_link(NEX) or SCRIPT_ROOT != DOC_ROOT and ( !defined("NEX_REAL_SCRIPT_ROOT") or NEX_REAL_SCRIPT_ROOT == false ) ) chdir(DOC_ROOT);
 

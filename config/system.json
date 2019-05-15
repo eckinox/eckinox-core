@@ -31,8 +31,7 @@
                 "param", "return", "var", "since", "author", "version", "copyright", "category", "package", "subpackage",
                 "api", "internal", "link", "see", "deprecated", "example", "filesource", "global", "ignore", "internal",
                 "license", "method", "property", "property-read", "property-write", "throws", "todo", "source", "inheritdoc"
-            ],
-            "autoload" : []
+            ]
         }
     }
 }

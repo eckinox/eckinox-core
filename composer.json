@@ -1,15 +1,23 @@
 {
     "name": "eckinox/core",
-    "type": "library",
+    "type": "framework",
     "description": "Eckinox's platform of web development.",
     "authors": [
+        {
+            "name": "Mikaël Laforge",
+            "email": "mlaforge@eckinox.ca"
+        },
         {
             "name": "Dave Mc Nicoll",
             "email": "davem@eckinox.ca"
         },
         {
-            "name": "Mikaël Laforge",
-            "email": "mlaforge@eckinox.ca"
+            "name": "Emile Perron",
+            "email": "emilep@eckinox.ca"
+        },
+        {
+            "name": "Jean-Danyel Routhier",
+            "email" : "jd@eckinox.ca"
         }
     ],
     "require": {
