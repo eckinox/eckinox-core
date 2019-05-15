@@ -1,0 +1,15 @@
+{% extends "/layout/default" %}
+
+{% lang "%namespace%.dashboard" %}
+
+{% title $this->_("page-title") %}
+
+{% section "title" %}
+    <h1><span>{% _ "section-title" %}</span></h1>
+{% endsection %}
+
+{% section "content" => { "lang" : "%namespace%.dashboard" } %}
+    <section id="dashboard-index" class="section">
+        Take a look into controller '{{= static::class }}' ; this is where you are right now.
+    </section>
+{% endsection %}

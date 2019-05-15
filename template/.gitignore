@@ -1,0 +1,6 @@
+env.json
+composer.lock
+/public/.htaccess
+/public/media/upload/*
+/var/
+/vendor/

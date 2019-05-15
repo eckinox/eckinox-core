@@ -9,15 +9,12 @@ use Eckinox\Eckinox,
     Eckinox\Configuration,
     Eckinox\Annotation;
 
-use Mcnd\Imagine,
-    Mcnd\Core;
-
 define("PUBLIC_DIR", __DIR__."/");
 define("SRC_DIR", dirname(PUBLIC_DIR)."/");
 define("VENDOR_SRC_DIR", SRC_DIR."vendor/");
 define("FRAMEWORK_SRC_DIR", VENDOR_SRC_DIR."eckinox/");
 
-$autoload = require_once(FRAMEWORK_SRC_DIR."autoload.php");
+$autoload = require_once(FRAMEWORK_SRC_DIR."core/autoload.php");
 
 $autoload->register_namespace('Eckinox', FRAMEWORK_SRC_DIR."core/");
 Eckinox::instance()->initialize();

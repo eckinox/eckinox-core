@@ -1,0 +1,25 @@
+{% section "layout" %}
+    <!DOCTYPE html>
+    <html>
+        <head>{% view "/layout/section/head" %}</head>
+        <body>
+            <div id="body-wrapper">
+                <div id="main-content" class="main-content">
+                    <header id="wrapper-header">
+                        {% section "header" %}{% endsection %}
+                    </header>
+
+                    <div id="wrapper-content">
+                        {% section "content" %}{% endsection %}
+                    </div>
+
+                    <footer id="wrapper-footer">
+                        {% section "footer" %}{% endsection %}
+                    </footer>
+                </div>
+            </div>
+
+            {% section "javascript-body" %}{% endsection %}
+        </body>
+    </html>
+{% endsection %}
